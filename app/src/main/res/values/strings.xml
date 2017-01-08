@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TrapTracker</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_summary">Summary</string>
+    <string name="title_activity_round">RoundActivity</string>
+    <string name="resultsFile">trackerData.txt</string>
+</resources>
