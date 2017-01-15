@@ -13,28 +13,6 @@
 
 
     <Button
-        android:text="Miss"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/button_hit"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="71dp"
-        android:id="@+id/button_miss"
-        android:onClick="addMiss" />
-
-    <Button
-        android:text="Hit"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="139dp"
-        android:id="@+id/button_hit"
-        android:elevation="0dp"
-        android:layout_width="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/button_miss"
-        android:layout_marginEnd="25dp"
-        android:onClick="addHit" />
-
-    <Button
         android:text="Finish"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -44,5 +22,54 @@
         android:layout_marginBottom="24dp"
         android:id="@+id/button_finish"
         android:onClick="finishRound" />
+
+    <Button
+        android:text="Hit"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_hit"
+        android:elevation="0dp"
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="62dp"
+        android:onClick="addHit"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/button_finish" />
+
+
+    <Button
+        android:text="Station"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_station"
+        android:onClick="changeStation"
+        android:layout_above="@+id/button_hit"
+        android:layout_alignStart="@+id/button_hit"
+        android:layout_marginBottom="11dp" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button_station"
+        android:layout_toEndOf="@+id/button_station"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="13dp"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView_station" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/textView_hit"
+        android:layout_alignBaseline="@+id/button_hit"
+        android:layout_alignBottom="@+id/button_hit"
+        android:layout_alignStart="@+id/textView_station" />
 
 </RelativeLayout>

@@ -4,4 +4,5 @@
     <string name="main_summary">Summary</string>
     <string name="title_activity_round">RoundActivity</string>
     <string name="resultsFile">trackerData.txt</string>
+    <string name="title_activity_settings">Settings</string>
 </resources>

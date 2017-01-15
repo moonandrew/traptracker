@@ -7,6 +7,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuInflater;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -53,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            startActivity(new Intent(this,SettingsActivity.class));
             return true;
         }
 
@@ -72,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
             String line="";
             while ((line=reader.readLine()) != null) {
                 String[] dtls=line.split("\\|");
-                String item="Date: " + dtls[0] + "    Hits: " + dtls[1] + " Miss: " + dtls[2];
+                String item="Date: " + dtls[0] + "    Round: " + dtls[1] ;
                 listItems.add(item);
             }
         }catch(IOException ex){
